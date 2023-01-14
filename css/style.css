@@ -1,0 +1,241 @@
+
+/* RESET */
+
+* , *::after , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ROOT VARIABLES */
+
+:root{
+    --color-primary:#ff5722;
+    --color-secondary-light:#fff6f2;
+    --color-secondary-dark:#ffa589;
+    --color-navbar:#f8f8f8;
+    --color-body:#333;
+    --color-heading:#000;
+    --color-white:#fff;
+    --border-radius: 8px;
+    --border-radius-article:12px;
+    --border-radius-badge: 22px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color:var(--color-body);
+    font-size: 1.4rem;
+}
+
+h1,h2,h3{
+    color: var(--color-heading);
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+@media screen and (min-width:1024px) {
+    
+    body{
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+font-size: 4rem;
+    }
+}
+
+/* ARTICLES */
+
+.article{
+    display: grid;
+    grid-template: repeat(3,1fr)  /285px;
+    justify-content: center;
+    margin: 5rem 12rem;
+    grid-gap: 3rem;
+}
+
+.card{
+     max-width: 500px;
+     border-radius: var(--border-radius-article); 
+     border: 1px solid rgb(228, 225, 225);
+     padding-bottom: 2rem;
+     overflow: hidden;
+     box-shadow: 0 0 12px 1px rgb(133, 127, 127);
+   }
+
+.card__header {
+    width: 100%;
+    padding: 2rem;
+
+    /* border-top-left-radius: var(--border-radius-article);
+    border-top-right-radius: var(--border-radius-article); */
+   }
+
+.card__header--around{
+    background-color: var(--color-secondary-dark);
+}
+
+.card__header--center{
+    background-color: var(--color-primary);
+}
+
+.head__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--feature , .price , .price__description ,.car-services{
+    color: var(--color-white);
+}
+
+.price{
+font-size: 2rem;
+}
+
+.price__description{
+    font-size: 1rem;
+}
+
+.car-services{
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width:1024px){
+
+    .article{
+        grid-template:1fr/ repeat(3,1fr)  ;
+    }
+
+    .card--around{
+        margin: 4rem 0;
+    }
+}
+
+/* buttons */
+
+.btn{
+    border: 0;
+    outline: 0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 2rem 2.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+
+.btn--primary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--secondary{
+    background-color: var(--color-secondary-dark);
+    color: var(--color-white);
+}
+
+.btn--block{
+    width: 90%;
+    font-size: 1.6rem;
+}
+/* ---->برای دکمه هایی هست که عرض کل صفحه رو گرفته یعنی کل بلاک رو گرفته */
+
+@media screen and (min-width:1024px){
+    .btn{
+        font-size: 1.6rem;
+    }
+
+    .btn--block{
+        font-size: 2rem;
+    }
+
+ 
+}
+
+/* BADGE */
+
+.badge{
+background-color: var(--color-white);
+border: 2px solid var(--color-primary);
+color:var(--color-primary);
+width: 8rem;
+outline: 0;
+border-radius: var(--border-radius-badge);
+padding:.5rem  1rem;
+margin: 1rem;
+text-align: center;
+white-space: nowrap;
+font-size: 1.2rem;
+font-family: sans-serif;
+font-weight: 600;
+}
+
+.badge--primary{
+    border: 2px solid 
+    var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+
+
+
+@media screen and (min-width:1024px){
+    .badge{
+        font-size: 1.4rem;
+    }
+
+    }
+
+
+/* LIST */
+ul{ 
+    color: var(--color-heading);
+    margin: 2rem 2rem 9rem;
+    font-size: 1.6rem;
+}
+
+li{
+    margin-bottom: 1.5rem;
+}
+
+.checklist{
+
+    color: rgb(71, 207, 71);
+}
+
+
+@media screen and (min-width:1024px){
+    ul{
+        font-size: 1.8rem;
+    }
+    .center--ul{
+        margin-bottom: 15.2rem;
+    }
+
+    .right--ul{
+        margin-bottom: 12.2rem;
+    }
+
+    }
+
+
+
+
