@@ -967,8 +967,11 @@ li {
         display: block;
         width: 500px;
     }
+}
 
 
+.active{
+    display: none;
 }
 
 
