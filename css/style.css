@@ -923,11 +923,11 @@ li {
     color: #333;
 }
 
-.service--desc {
+#service--desc {
     text-align: justify;
 }
 
-.service--desc p {
+#service--desc p {
     margin-top: 2rem;
     line-height: 3rem;
 }
@@ -959,7 +959,7 @@ li {
         width: 100%;
     }
 
-    .service--desc {
+    #service--desc {
         width: 45%;
     }
 
